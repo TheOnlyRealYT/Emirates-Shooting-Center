@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" {% if arabic %}dir="rtl"{% endif %}>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Page{% endblock %}</title>
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+<body class="dark:bg-neutral-900 transition-colors duration-200">
+    <div id="preloader" class="fixed inset-0 z-50 bg-white dark:bg-neutral-900 transition-opacity duration-700 ease-out">
+        <div class="w-full bg-gray-200 h-[4px] dark:bg-gray-100 overflow-hidden">
+            <div
+                id="progress-bar"
+                class="bg-brand dark:bg-brand-dark h-[4px] transition-all duration-300 ease-out"
+                style="width: 0">
+            </div>
+        </div>
+    </div>
+    {% if arabic %}
+        {% include 'components/arabic_versions/nav_ar.html' %}
+    {% else %}
+        {% include 'components/english_versions/nav.html' %}
+    {% endif %}
+    {% block content %}
+    {% endblock %}
+    {% if arabic %}
+        {% include 'components/arabic_versions/footer_ar.html' %}
+    {% else %}
+        {% include 'components/english_versions/footer.html' %}
+    {% endif %}
+<script src="js/flowbite.min.js"></script>
+<script src="js/tw-elements.umd.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

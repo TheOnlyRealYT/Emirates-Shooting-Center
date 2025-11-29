@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+{% block title%}الصفحة الرئيسية{% endblock %}
+{% block content %}
+
+<div
+  id="carouselExampleCaptionsFull"
+  class="relative dark:bg-neutral-900"
+  data-twe-carousel-init
+  data-twe-ride="carousel">
+  <div
+    class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+    data-twe-carousel-indicators>
+    <button
+      type="button"
+      data-twe-target="#carouselExampleCaptionsFull"
+      data-twe-slide-to="0"
+      data-twe-carousel-active
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-current="true"
+      aria-label="Slide 1"></button>
+    <button
+      type="button"
+      data-twe-target="#carouselExampleCaptionsFull"
+      data-twe-slide-to="1"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-label="Slide 2"></button>
+    <button
+      type="button"
+      data-twe-target="#carouselExampleCaptionsFull"
+      data-twe-slide-to="2"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-label="Slide 3"></button>
+  </div>
+  <div
+    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+    <div
+      class="relative float-left -mr-[100%] hidden w-full bg-cover bg-center bg-no-repeat opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-fade
+      data-twe-carousel-item
+      data-twe-carousel-active>
+      <video class="" playsinline autoplay muted loop>
+        <source
+          class=""
+          src="vid/Carousel video 3.mp4"
+          type="video/mp4" />
+      </video>
+      <div
+        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+        style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="flex h-full items-center justify-center">
+          <div class="px-md-0 px-14 text-center text-white">
+            <h2 class="mb-4 text-xl md:text-7xl font-bold font-mono">Emirates Shooting Center</h2>
+            <h5 class="mb-6 text-lg font-semibold">
+              أن الدقة وااللتزام أساس التميز.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative float-left -mr-[100%] hidden w-full bg-cover bg-center bg-no-repeat opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-fade
+      data-twe-carousel-item>
+      <video class="" playsinline autoplay muted loop>
+        <source
+          class=""
+          src="vid/Carousel video.mp4"
+          type="video/mp4" />
+      </video>
+      <div
+        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+        style="background-color: rgba(0, 0, 0, 0.3)">
+        <div class="flex h-full items-center justify-center">
+          <div class="px-md-0 px-14 text-center text-white">
+            <h2 class="mb-4 text-xl md:text-3xl font-semibold">
+              نسعى لتقديم حلول تدريبية وتقنية تعكس أعلى معايير الجودة واالحتراف.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative float-left -mr-[100%] hidden w-full bg-cover bg-center bg-no-repeat opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-fade
+      data-twe-carousel-item>
+      <video class="" playsinline autoplay muted loop>
+        <source
+          class=""
+          src="vid/Carousel video 2.mp4"
+          type="video/mp4" />
+      </video>
+      <div
+        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+        style="
+          background: linear-gradient(
+            45deg,
+            rgba(236, 29, 29, 0.7),
+            rgba(14, 14, 14, 0.7) 100%
+          );
+        ">
+        <div class="flex h-full items-center justify-center">
+          <div class="px-md-0 px-14 text-center text-white">
+            <h2 class="mb-4 text-xl md:text-3xl font-semibold">
+              Emirates Shooting Center
+            </h2>
+            <a
+              type="button"
+              class="inline-block rounded border-2 border-white px-6 py-2 text-xs font-medium uppercase leading-tight text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+              href="/about_us_ar"
+              role="button"
+              data-twe-ripple-init
+              data-twe-ripple-color="light"
+              >يتعلم أكثر!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dark:bg-neutral-950 bg-neutral-100">
+    <div class="container mx-auto px-8 lg:px-16 py-10 ">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl mb-6 font-bold dark:text-white">عن Emirates Shooting Center</h2>
+                <p class="text-muted-foreground mb-6 dark:text-white transition-colors duration-200">
+                    تعد شركة Center Shooting Emirates واحدة من الشركات الرائدة في مجال تصميم
+                    وتجهيز وصيانة ميادين الرماية وفق أعلى المعايير العالمية، حيث تجمع بين الخبرة التقنية والدقة
+                    الهندسية لتقديم حلول متكاملة تخدم القطاعات األمنية والعسكرية والمدنية على حد سواء.
+                </p>
+                <p class="text-muted-foreground mb-6 dark:text-white transition-colors duration-200">
+                     منذ تأسيسها، التزمت الشركة بتطبيق أعلى معايير الجودة والسالمة، لتصبح شريكا موثوقا في
+                    إنشاء ميادين الرماية المتطورة التي تلبي احتياجات التدريب الواقعي واألداء العملي.
+                </p>
+            </div>
+
+            <div class="relative">
+                <div class="aspect-[4/3] rounded-lg overflow-hidden">
+                    <img
+                    src="img/guy_shooting.jpg"
+                    alt="Shooting range facility"
+                    class="w-full h-full object-cover"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="services" class="py-20 bg-neutral-50 dark:bg-neutral-900">
+  <div class="container mx-auto px-8 lg:px-16">
+    <div class="flex justify-between items-end mb-12">
+      <h2 class="text-4xl transition-colors duration-200 dark:text-white">عن الخدماتنا</h2>
+        <a href="{{ url_for('our_services_ar') }}">
+          <button class="text-primary duration-200 hover:gap-3 inline-flex items-center gap-2 transition-all group text-sm dark:text-white">
+            <span class="uppercase tracking-wider">Learn more</span>
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+            </svg>
+          </button>
+        </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- CARD TEMPLATE -->
+      <div class="bg-red-600 hover:-translate-y-2 transition-all duration-200 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] hover:bg-red-500 text-white p-8 group hover:bg-primary/90 cursor-pointer">
+
+        <div class="text-sm mb-6 opacity-80">01</div>
+
+        <h3 class="text-2xl mb-4 min-h-[3.5rem] font-bold">تصميم</h3>
+
+        <p class="text-xl mb-8 opacity-90 min-h-[4rem]">
+          تصميم وتنفيذ ميادين الرماية الداخلية والخارجية.
+        </p>
+        <a href="{{ url_for('our_services_ar') }}">
+        <button class="uppercase tracking-wider inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+          <span>استكشف</span>
+
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+            </svg>
+        </button>
+        </a>
+      </div>
+        <div class="bg-red-600 hover:-translate-y-2 transition-all duration-200 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] hover:bg-red-500 text-white p-8 group hover:bg-primary/90 cursor-pointer">
+
+        <div class="text-sm mb-6 opacity-80">02</div>
+
+        <h3 class="text-2xl mb-4 min-h-[3.5rem] font-bold">التوريد والتركيب</h3>
+
+        <p class="text-xl mb-8 opacity-90 min-h-[4rem]">
+          تركيب أنظمة األهداف الثابتة والمتحركة وأنظمة المحاكاة الذكية.
+        </p>
+        <a href="{{ url_for('our_services_ar') }}">
+        <button class="uppercase tracking-wider inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+          <span>استكشف</span>
+
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+            </svg>
+        </button>
+        </a>
+      </div>
+        <div class="bg-red-600 hover:-translate-y-2 transition-all duration-200 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] hover:bg-red-500 text-white p-8 group hover:bg-primary/90 cursor-pointer">
+
+        <div class="text-sm mb-6 opacity-80">03</div>
+
+        <h3 class="text-2xl mb-4 min-h-[3.5rem] font-bold">الصيانة الدورية</h3>
+
+        <p class="text-xl mb-8 opacity-90 min-h-[4rem]">
+          الصيانة الدورية والتطوير التقني لألنظمة.
+        </p>
+        <a href="{{ url_for('our_services_ar') }}">
+        <button class="uppercase tracking-wider inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+          <span>استكشف</span>
+
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+            </svg>
+        </button>
+        </a>
+      </div>
+      <!-- END TEMPLATE -->
+    </div>
+  </div>
+</section>
+
+{% endblock %}

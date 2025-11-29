@@ -1,0 +1,78 @@
+<section id="services" class="py-20 bg-neutral-50 dark:bg-neutral-900">
+  <div class="container mx-auto px-8 lg:px-16">
+    <div class="flex justify-between items-end mb-12">
+      <h2 class="text-4xl transition-colors duration-200 dark:text-white">Our services</h2>
+        <a href="{{ url_for('our_services') }}">
+          <button class="text-primary duration-200 hover:gap-3 inline-flex items-center gap-2 transition-all group text-sm dark:text-white">
+            <span class="uppercase tracking-wider">Learn more</span>
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <!-- CARD TEMPLATE -->
+      <div class="bg-red-600 hover:-translate-y-2 transition-all duration-200 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] hover:bg-red-500 text-white p-8 group hover:bg-primary/90">
+
+        <div class="text-sm mb-6 opacity-80">01</div>
+
+        <h3 class="mb-4 min-h-[3.5rem] font-bold">Designs</h3>
+
+        <p class="text-sm mb-8 opacity-90 min-h-[4rem]">
+          Design and construction of indoor and outdoor shooting ranges.
+        </p>
+        <a href="{{ url_for('our_services') }}">
+        <button class="text-sm uppercase tracking-wider inline-flex items-center gap-2 group-hover:gap-3 transition-all cursor-pointer">
+          <span>Explore</span>
+
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        </a>
+      </div>
+        <div class="bg-red-600 hover:-translate-y-2 transition-all duration-200 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] hover:bg-red-500 text-white p-8 group hover:bg-primary/90">
+
+        <div class="text-sm mb-6 opacity-80">02</div>
+
+        <h3 class="mb-4 min-h-[3.5rem] font-bold">Supply & Installation</h3>
+
+        <p class="text-sm mb-8 opacity-90 min-h-[4rem]">
+          Supply and installation of moving, fixed, and simulation target systems
+        </p>
+        <a href="{{ url_for('our_services') }}">
+        <button class="text-sm uppercase tracking-wider inline-flex items-center gap-2 group-hover:gap-3 transition-all cursor-pointer">
+          <span>Explore</span>
+
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        </a>
+      </div>
+        <div class="bg-red-600 hover:-translate-y-2 transition-all duration-200 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] hover:bg-red-500 text-white p-8 group hover:bg-primary/90">
+
+        <div class="text-sm mb-6 opacity-80">03</div>
+
+        <h3 class="mb-4 min-h-[3.5rem] font-bold">Maintenance</h3>
+
+        <p class="text-sm mb-8 opacity-90 min-h-[4rem]">
+          Regular maintenance and technological upgrading of range systems
+        </p>
+        <a href="{{ url_for('our_services') }}">
+        <button class="text-sm uppercase tracking-wider inline-flex items-center gap-2 group-hover:gap-3 transition-all cursor-pointer">
+          <span>Explore</span>
+
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        </a>
+      </div>
+      <!-- END TEMPLATE -->
+    </div>
+  </div>
+</section>

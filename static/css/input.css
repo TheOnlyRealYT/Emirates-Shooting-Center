@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "flowbite/src/themes/minimal";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+        --color-fg-brand-subtle: var(--color-red-200);
+        --color-fg-brand: var(--color-red-700);
+        --color-fg-brand-strong: var(--color-red-900);
+
+        --color-brand-softer: var(--color-red-50);
+        --color-brand-soft: var(--color-red-100);
+        --color-brand: var(--color-red-700);
+        --color-brand-light: var(--color-white);
+        --color-brand-dark-white: var(--color-white);
+        --color-brand-dark: var(--color-red-700);
+        --color-brand-medium: var(--color-red-200);
+        --color-brand-strong: var(--color-red-800);
+
+        --font-sans: Gibson,Helvetica,Arial,sans-serif;
+        --font-body: Gibson,Helvetica,Arial,sans-serif;
+        --font-mono: Gibson,Helvetica,Arial,sans-serif, monospace;
+
+        --breakpoint-xs: 30rem;
+      --breakpoint-2xl: 100rem;
+      --breakpoint-3xl: 120rem;
+}
