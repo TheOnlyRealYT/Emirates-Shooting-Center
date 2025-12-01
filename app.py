@@ -65,13 +65,13 @@ def quality_and_safety_ar():
 
 @app.route('/Clients_and_Partners')
 def clients_and_partners():
-    return render_template('clients_and_partners.html', arabic=False, other_version_url='/Our_Clients_ar')
+    return render_template('clients_and_partners.html', arabic=False, other_version_url='/Clients_and_Partners_ar')
 
 
 @app.route('/Clients_and_Partners_ar')
 def clients_and_partners_ar():
-    return render_template('clients_and_partners_ar.html', arabic=True, other_version_url='/Our_Clients')
+    return render_template('clients_and_partners_ar.html', arabic=True, other_version_url='/Clients_and_Partners')
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
