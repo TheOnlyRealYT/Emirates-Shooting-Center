@@ -73,5 +73,15 @@ def clients_and_partners_ar():
     return render_template('clients_and_partners_ar.html', arabic=True, other_version_url='/Clients_and_Partners')
 
 
+@app.route('/Contact_Us')
+def contact_us():
+    return render_template('contact_us.html', arabic=False, other_version_url='/Contact_Us_ar')
+
+
+@app.route('/Contact_Us_ar')
+def contact_us_ar():
+    return render_template('contact_us_ar.html', arabic=True, other_version_url='/Contact_Us')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
