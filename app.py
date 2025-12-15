@@ -1,6 +1,18 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from flask_mail import Mail, Message
+import os, dotenv
+
+dotenv.load_dotenv()
 
 app = Flask(__name__, static_folder="static", template_folder="templates", static_url_path="/")
+
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
+mail = Mail(app)
 
 
 @app.route('/')
