@@ -73,49 +73,21 @@
         </div>
       </div>
     </div>
-    <!--<div class="overflow-hidden py-8">
+    <div class="overflow-hidden py-8">
       <div class="scroll-container w-max gap-8">
         <div class="flex gap-8">
-
-          <div class="w-40">
-            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&q=80&w=1160"
-                 class="aspect-square rounded-full object-cover" alt="">
-            <div class="mt-4 text-center">
-              <h3 class="text-lg font-semibold text-neutral-900">Eric Johnson</h3>
-              <p class="text-sm text-neutral-700">Product Designer</p>
-            </div>
-          </div>
-
-          <div class="w-40">
-            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&q=80&w=1160"
-                 class="aspect-square rounded-full object-cover" alt="">
-            <div class="mt-4 text-center">
-              <h3 class="text-lg font-semibold text-neutral-900">Eric Johnson</h3>
-              <p class="text-sm text-neutral-700">Product Designer</p>
-            </div>
-          </div>
-        </div>
-        exact clone for looping V
-        <div class="flex gap-8">
-          <div class="w-40">
-            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&q=80&w=1160"
-                 class="aspect-square rounded-full object-cover" alt="">
-            <div class="mt-4 text-center">
-              <h3 class="text-lg font-semibold text-neutral-900">Eric Johnson</h3>
-              <p class="text-sm text-neutral-700">Product Designer</p>
-            </div>
-          </div>
-
-          <div class="w-40">
-            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&q=80&w=1160"
-                 class="aspect-square rounded-full object-cover" alt="">
-            <div class="mt-4 text-center">
-              <h3 class="text-lg font-semibold text-neutral-900">Eric Johnson</h3>
-              <p class="text-sm text-neutral-700">Product Designer</p>
-            </div>
-          </div>
-        </div>
-
+            {% for i in range(1, 9) %}
+              <div class="w-40">
+                <img src="/img/logos/{{ i }}.png"
+                     class="aspect-square rounded-full object-cover" alt="">
+              </div>
+            {% endfor %}
+            {% for i in range(1, 9) %}
+              <div class="w-40">
+                <img src="/img/logos/{{ i }}.png"
+                     class="aspect-square rounded-full object-cover" alt="">
+              </div>
+            {% endfor %}
       </div>
-    </div> -->
+    </div>
 </section>

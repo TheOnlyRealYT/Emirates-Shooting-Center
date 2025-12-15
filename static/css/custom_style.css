@@ -1,10 +1,21 @@
 .scroll-container {
     display: flex;
     width: max-content;
-    animation: scroll-left 10s linear infinite;
+    animation: scroll-left 25s linear infinite;
 }
 
 @keyframes scroll-left {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+}
+
+.scroll-container-right {
+    display: flex;
+    width: max-content;
+    animation: scroll-right 25s linear infinite;
+}
+
+@keyframes scroll-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50%); }
 }
