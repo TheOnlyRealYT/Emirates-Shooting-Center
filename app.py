@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 import os, dotenv
 
+
 dotenv.load_dotenv()
 
 app = Flask(__name__, static_folder="static", template_folder="templates", static_url_path="/")
