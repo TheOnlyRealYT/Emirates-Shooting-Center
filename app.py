@@ -96,14 +96,14 @@ def contact_us_ar():
     return render_template('contact_us_ar.html', arabic=True, other_version_url='/Contact_Us')
 
 
-@app.route('/Contact_Form')
-def contact_from():
-    return render_template('contact_form.html', arabic=False, other_version_url='/Contact_Form_ar')
+@app.route('/Gallery')
+def gallery():
+    return render_template('gallery.html', arabic=False, other_version_url='/Gallery_ar')
 
 
-@app.route('/Contact_Form_ar')
-def contact_from_ar():
-    return render_template('contact_form_ar.html', arabic=True, other_version_url='/Contact_Form')
+@app.route('/Gallery_ar')
+def gallery_ar():
+    return render_template('gallery_ar.html', arabic=True, other_version_url='/Gallery')
 
 
 if __name__ == '__main__':
