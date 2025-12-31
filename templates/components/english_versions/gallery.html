@@ -1,0 +1,16 @@
+<section class="dark:bg-neutral-900 bg-neutral-50 transition-all duration-200">
+    <div class="text-center pt-10">
+    <h1 class="mb-6 text-4xl font-bold block tracking-tighter text-heading md:text-5xl lg:text-6xl transition-colors duration-200">Photo Gallery</h1>
+    </div>
+    <div class="grid items-start grid-cols-2 md:grid-cols-5 gap-4 p-10">
+        {% for j in range(0,5) %}
+        <div class="grid gap-4">
+            {% for i in range((12*j),12+(12*j)) %}
+            <div>
+                <img class="h-auto max-w-full rounded-base" src="/img/gallery/gallery/{{ i }}.jpeg" alt="">
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
